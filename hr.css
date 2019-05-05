@@ -1,0 +1,495 @@
+#r{
+  color:black;
+  font-size: 4.5rem;
+  padding-left: 30pxl;
+
+}
+.radio{
+  font-size:2rem;
+  color:darkmagenta;
+}
+
+
+
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+
+
+#cssmenu,
+
+
+#cssmenu ul,
+
+
+#cssmenu ul li,
+
+
+#cssmenu ul li a {
+
+margin: 0;
+padding: 0;
+border: 0;
+list-style: none;
+line-height: 2;
+display: block;
+position: relative;
+-webkit-box-sizing: border-box;
+ -moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+#cssmenu:after,
+#cssmenu > ul:after
+{
+content: ".";
+display: block;
+clear: both;
+visibility: hidden;
+line-height: 0;
+height: 0;
+}
+
+#cssmenu
+{
+width: auto;
+border-bottom: 3px solid black;
+font-family: Raleway, sans-serif;
+ line-height: 1;
+}
+
+
+
+#cssmenu ul
+{
+}
+#cssmenu > ul > li
+{
+float: left;
+}
+
+#cssmenu.align-center > ul
+{
+font-size: 0;
+  text-align: center;
+
+}
+#cssmenu.align-center > ul > li
+{
+  display: inline-block;
+ float: none;
+}
+
+#cssmenu.align-right > ul > li
+ {
+float: middle;
+}
+
+#cssmenu.align-right > ul > li > a
+{
+margin-right: 0;
+margin-left: -4px;
+}
+
+
+
+#cssmenu > ul > li > a
+{
+z-index: 2;
+padding: 18px 25px 12px 25px;
+font-size: 15px;
+ font-weight: 400;
+text-decoration: none;
+color: #444444;
+-webkit-transition: all .2s ease;
+-moz-transition: all .2 ease;
+-ms-transition: all .2s ease;
+  -o-transition: all .2s ease;
+transition: all .2s ease;
+
+
+  margin-right: -4px;
+
+
+}
+
+
+
+#cssmenu > ul > li.active > a,
+
+
+#cssmenu > ul > li:hover > a,
+
+
+#cssmenu > ul > li > a:hover {
+
+
+  color: #ffffff;
+
+
+}
+
+
+
+#cssmenu > ul > li > a:after
+{
+
+  position:absolute;
+
+
+ left: 0;
+
+
+bottom: 0;
+
+
+  right: 0;
+
+
+z-index: -1;
+
+
+  width: 100%;
+
+
+  height: 120%;
+
+
+ border-top-left-radius: 8px;
+
+
+ border-top-right-radius: 8px;
+
+
+ content: "";
+
+
+ -webkit-transition: all .2s ease;
+
+
+ -o-transition: all .2s ease;
+
+
+ transition: all .2s ease;
+
+
+ -webkit-transform: perspective(5px) rotateX(2deg);
+
+
+-webkit-transform-origin: bottom;
+
+
+ -moz-transform: perspective(5px) rotateX(2deg);
+
+
+ -moz-transform-origin: bottom;
+
+
+ transform: perspective(5px) rotateX(2deg);
+
+
+transform-origin: bottom;
+
+
+}
+
+
+
+#cssmenu > ul > li.active > a:after,
+
+
+#cssmenu > ul > li:hover > a:after,
+
+
+#cssmenu > ul > li > a:hover:after
+{
+
+
+ background: black;
+
+
+}
+
+#ph
+{
+
+    position:absolute;
+
+  color:white;
+
+  top:90px;
+
+ right:40px;
+
+  font-size:2rem;
+
+}
+
+#logo img{
+
+    position:absolute;
+
+top:1;
+
+width:11%;
+
+}
+
+#bg{
+
+    background-color:lightblue;
+
+}
+
+
+
+#comp_name{
+
+   font-size:4.5rem;
+
+    font-family:Raleway;
+
+   position:absolute;
+
+  top:40px;
+
+left:140px;
+
+  color:white;
+
+
+}
+
+#add{
+
+position:absolute;
+
+    top:110px;
+
+   left:14px;
+
+  color:white;
+
+}
+
+
+#txt_slogan{
+
+padding-top:10px;
+
+ font-style:italic;
+
+ font-size:3.5rem;
+
+  text-align:center;
+
+   color:red;
+
+ left:20%;
+
+}
+
+
+#tow{
+
+    position:absolute;
+
+    right:250px;
+
+    top:700px;
+
+  color:black;
+
+font-size:1.75rem;
+
+}
+
+#tow_service{
+
+
+    position:absolute;
+
+left:70px;
+
+   top:300px;
+
+   font-size:1.5rem;
+
+}
+
+
+#tow_head{
+
+  position:absolute;
+
+  top:650px;
+
+   right:267px;
+
+  font-size:2.5rem;
+
+  color:red;
+
+}
+
+#sym_img{
+
+  position:absolute;
+
+    top:700px;
+
+    right:128px;
+
+}
+
+#car_logo{
+
+position:absolute;
+
+   right:128px;
+
+    top:800px;
+
+
+}
+
+#des2{
+
+    position:absolute;
+
+    top:900px;
+
+
+}
+
+
+#timings{
+
+  position:absolute;
+
+  top:900px;
+
+ left:20px;
+
+color:white;
+
+}
+
+
+
+#pay{
+  position:relative;
+  top:420px;
+  left:1070px;
+}
+
+#hr{
+
+color:yellow;
+
+}
+
+#slides{
+
+   position:absolute;
+
+    top:350px;
+
+    left:35px;
+
+    color:grey;
+
+ background-color:grey !important;
+
+}
+
+.corousel{
+
+color:grey;
+
+    background-color:grey !important;
+
+}
+
+.corousel .item{
+
+    color:grey;
+
+   background-color:grey;
+
+}
+
+
+
+#on{
+
+position:absolute;
+
+ left:100px;
+
+   top:700px;
+
+    font-size:1.5rem;
+
+}
+
+
+#two{
+
+ position:absolute;
+
+  left:100px;
+
+  top:900px;
+
+   font-size:1.5rem;
+
+}
+
+#safety{
+
+ background-color:orange;
+
+   color:lightblue;
+
+ position:absolute;
+
+   right:40px;
+
+top:700px;
+
+   overflow:scroll;
+
+  font-style:italic;
+
+
+   }
+
+#main{
+
+    color:black;
+}
+#cb{
+  position: absolute;
+  top:212px;
+  left:20px;
+
+
+}
+#offer{
+  position: absolute;
+  left:100px;
+  top:520px;
+  font-size: 1.75rem;
+}
+#offer1{
+  position: absolute;
+  left: 100px;
+  top:550px;
+}
+#offer2{
+  position: absolute;
+  left:270px;
+  top:550px;
+  
+}
+#analysis{
+  font-size: 1.75rem;
+}

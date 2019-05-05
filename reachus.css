@@ -1,0 +1,388 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+
+#cssmenu,
+
+#cssmenu ul,
+
+#cssmenu ul li,
+
+#cssmenu ul li a {
+
+margin: 0;
+
+  padding: 0;
+
+  border: 0;
+
+  list-style: none;
+
+  line-height: 2;
+
+  display: block;
+
+  position: relative;
+
+  -webkit-box-sizing: border-box;
+
+  -moz-box-sizing: border-box;
+
+  box-sizing: border-box;
+
+}
+
+
+#cssmenu:after,
+
+#cssmenu > ul:after {
+
+  content: ".";
+
+  display: block;
+
+  clear: both;
+
+  visibility: hidden;
+
+  line-height: 0;
+
+  height: 0;
+
+}
+
+
+#cssmenu {
+
+  width: auto;
+
+  border-bottom: 3px solid black;
+
+  font-family: Raleway, sans-serif;
+
+  line-height: 1;
+
+}
+
+
+#cssmenu > ul > li{
+
+  float: left;
+
+}
+
+
+#cssmenu.align-center > ul {
+
+  font-size: 0;
+
+ text-align: center;
+
+}
+
+
+#cssmenu.align-center > ul > li {
+
+  display: inline-block;
+
+float: none;
+
+}
+
+
+#cssmenu.align-right > ul > li {
+
+  float: right;
+
+}
+
+
+#cssmenu.align-right > ul > li > a {
+
+  margin-right: 0;
+
+  margin-left: -4px;
+
+}
+
+
+#cssmenu > ul > li > a {
+
+  z-index: 2;
+
+  padding: 18px 25px 12px 25px;
+
+  font-size: 15px;
+
+  font-weight: 400;
+
+  text-decoration: none;
+
+  color: black;
+
+  -webkit-transition: all .2s ease;
+
+  -moz-transition: all .2 ease;
+
+-ms-transition: all .2s ease;
+
+  -o-transition: all .2s ease;
+
+  transition: all .2s ease;
+
+  margin-right: -4px;
+
+}
+
+
+#cssmenu > ul > li.active > a,
+
+#cssmenu > ul > li:hover > a,
+
+#cssmenu > ul > li > a:hover {
+
+  color: #ffffff;
+
+}
+
+
+#cssmenu > ul > li > a:after {
+
+  position:absolute;
+
+ left: 0;
+
+  bottom: 0;
+
+  right: 0;
+
+ z-index: -1;
+
+  width: 100%;
+
+  height: 120%;
+
+  border-top-left-radius: 8px;
+
+ border-top-right-radius: 8px;
+
+  content: "";
+
+  -webkit-transition: all .2s ease;
+
+  -o-transition: all .2s ease;
+
+  transition: all .2s ease;
+
+  -webkit-transform: perspective(5px) rotateX(2deg);
+
+-webkit-transform-origin: bottom;
+
+  -moz-transform: perspective(5px) rotateX(2deg);
+
+  -moz-transform-origin: bottom;
+
+  transform: perspective(5px) rotateX(2deg);
+
+transform-origin: bottom;
+
+}
+
+
+#cssmenu > ul > li.active > a:after,
+
+#cssmenu > ul > li:hover > a:after,
+
+#cssmenu > ul > li > a:hover:after {
+
+ background: black;
+
+}
+#ph{
+    position:absolute;
+    color:white;
+    top:90px;
+    right:40px;
+    font-size:2rem;
+}
+#logo img{
+    position:absolute;
+    top:1;
+    width:11%;
+}
+#bg{
+    background-color:lightblue;
+}
+
+
+#comp_name{
+    font-size:4.5rem;
+    font-family:Raleway;
+    position:absolute;
+    top:40px;
+    left:150px;
+    color:white;
+
+}
+#add{
+    position:absolute;
+    top:110px;
+    left:15px;
+    color:white;
+}
+#sym_img{
+    position:absolute;
+    top:1080px;
+    right:128px;
+}
+#car_logo{
+    position:absolute;
+    right:128px;
+    top:1180px;
+
+}
+#des2{
+    position:absolute;
+    top:1250px;
+
+}
+#hr{
+  color:yellow;
+}
+#timings{
+
+  position:absolute;
+
+  top:5px;
+
+ left:20px;
+
+color:white;
+
+}
+
+
+
+#pay{
+  position:absolute;
+  top:20px;
+  left:1070px;
+}
+span
+{
+  font-size:2rem;
+  color:white;
+}
+
+#on
+{
+  font-size:2rem;
+  color:pink;
+}
+#two
+{
+  font-size:4rem;
+  color:blue;
+ }
+#to
+{
+  font-size:2rem;
+  color:white;
+}
+#three
+{
+    position:absolute;
+    right:280px;
+    top:300px;
+    font-size:4rem;
+    color:brown;
+}
+#con{
+    position:absolute;
+    right:100px;
+    top:400px;
+}
+#slg{
+    position:absolute;
+    left:100px;
+    top:380px;
+    color:darkblue;
+    font-size:2.5rem;
+}
+form
+{
+    position:absolute;
+    left:100px;
+    top:450px;
+    margin:0rem;
+    width: 320px;
+    color:black;
+}
+input
+{
+  padding:5px;
+
+}
+input[type=text]
+{
+  display:block;
+  margin-bottom:25px;
+  width:100%;
+  border:2px solid blue;
+  background:white;
+  color:black;
+}
+textarea
+{
+  display:block;
+  margin-bottom:25px;
+  width:100%;
+  border:2px solid blue;
+  background:white;
+  color:black;
+}
+
+button{
+    position:absolute;
+    top:400px;
+    left:260px;
+    display:block;
+    color:black;
+}
+#four
+{
+    position:absolute;
+    left:100px;
+    top:300px;
+    font-size:4rem;
+    color:red;
+    animation-duration:2000ms;
+    animation-name:blink;
+    animation-iteration-count:infinite;
+}
+@keyframes blink
+{
+  from
+  {
+    opacity:1;
+  }
+  to
+  {
+    opacity:0;
+  }
+}
+
+
+ul li ul textarea
+{
+  display:none;
+}
+ul li:hover ul textarea
+{
+  display:block;
+}
+#cb{
+  position: absolute;
+  top:212px;
+  left:20px;
+
+
+}

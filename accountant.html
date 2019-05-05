@@ -1,0 +1,222 @@
+<html>
+<head>
+  <title id="t1"> Accountant </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="pgm/accountant.css">
+  <script src="http://code.jquery.com/jquery.latest.min.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script src="js/app.js"></script>
+
+
+</head>
+<body ng-app="myApp" id="bg">
+
+<div id="des1">
+  <canvas id="myCanvas" width="1365" height="200"
+  style="border:1px solid #c3c3c3;">
+  </canvas>
+
+  <script>
+  var canvas = document.getElementById("myCanvas");
+  var ctx = canvas.getContext("2d");
+  ctx.fillStyle = "darkblue";
+  ctx.fillRect(0,0,1365,200);
+  </script>
+</div>
+<div id="comp_name">
+
+</div>
+<div id="logo">
+<img src="images/lo_new1.png" alt="Logo to be Displayed">
+</div>
+<div class="navbar:default" id="cssmenu" >
+   <ul class="nav navbar-nav navbar-right">
+      <li> <a href="front.html">Home </a> </li>
+        <li> <a href="index.html"> Services </a> </li>
+            <li> <a href="book.html"> Book</a> </li>
+              <li> <a href="offers.html"> Offers</a> </li>
+              <li> <a href="review.html"> Reviews </a> </li>
+                <li> <a href="gallery1.html"> Gallery</a> </li>
+                  <li> <a href="reachus.html"> Reach us</a> </li>
+                  <li> <a href="admin.html"> Admin</a> </li>
+    </ul>
+  </div>
+<div id="txt_slogan">
+  <!--  We Share The Pride In Your Ride-->
+</div>
+<div id="ph">
+  email:anupba72@gmail.com<br>
+  phone:+91-8553905226
+</div>
+<div id="add">
+  A Building, 1st Cross,1st Main Road<br>
+  S.V.G Nagar, Nagarbhavi, Moodalapalya<br>
+  Bengaluru:560072<br>
+</div>
+<div id="cb">
+<a href="review.html" class="btn btn-success btn-block">
+   Chatbot  </a>
+</div>
+
+<div  ng-controller="Controller6">
+<form id="apt" method="post">
+  <!-- <div id="aid"> -->
+    <p><b>Enter Appointment_id :</b></p>
+    <input type="text" id="ai" name="Enter Appointment_id" placeholder="Appointment_id" ng-model="appointmentId">
+    <input type="submit" value="Send" id="ai1" ng-click="findAppointment()">
+  <!-- </div> -->
+</form>
+<form>
+<div id="Name1">
+
+   <label  for="Name">Name :</label> <br><input type="text" id="name" style="width:250px; height:30px;" placeholder="customer name"   ng-model="appointname" required></br>
+</div>
+<div id="no">
+     <label for="number">Number :</label><br> <input type="text" id="num" style="width:250px; height:30px;" placeholder="number" value=""ng-model="appointphno" required></br>
+</div>
+<div id="ema">
+    <label for="email">Email :</label> <br><input type="text" id="email" style="width:250px; height:30px;" placeholder="email"  value=""ng-model="appointemail" required></br>
+</div>
+<div id="cno">
+    <label for="cnum">Car_no :</label> <br> <input type="text" id="cnum" style="width:250px; height:30px;" placeholder="car_num"  value=""ng-model="appointcarregno" required></br>
+</div>
+<div id="addr">
+    <label for="address">Address :</label><br> <input type="text" id="addr1" style="width:250px; height:30px;" placeholder="address"  value=""ng-model="appointadress" required></br>
+</div>
+
+<div id="serv">
+    <label for="service">Service booked:</label><br> <input type="text" id="ser" style="width:250px; height:30px;" placeholder="services"  value=""ng-model="appointservice" required></br>
+</div>
+</div>
+<div id="can">
+<input  type="reset" class="cancelbtn" value="cancel" >
+</div>
+</form>
+
+<div ng-controller="Controller8" >
+<table>
+  <tr>
+    <th id="p1">Parts Replaced</th>
+    <th id="a1">Amount</th>
+  </tr>
+</table>
+  <br>
+<form name="formcalc" action="#">
+            <div id="pr">
+            <input type="text" id="parts" style="width:250px; height:30px;">
+            <input type="number" name="txtnum0" ng-model="part0" id="amount">
+          </div>
+
+          <div id="pr1">
+          <label for="parts_replaced"></label>
+          <input type="text" id="parts" style="width:250px; height:30px;">
+          <input type="number" name="txtnum1" ng-model="part1" id="amount">
+          </div>
+
+          <div id="pr2">
+          <label for="parts_replaced"></label>
+          <input type="text" id="parts" style="width:250px; height:30px;">
+
+          <input type="number" name="txtnum2" ng-model="part2" id="amount">
+          </div>
+
+          <div id="pr3">
+          <label for="parts_replaced"></label>
+          <input type="text" id="parts" style="width:250px; height:30px;">
+          <input type="number" ng-model="part3" name="txtnum3" id="amount">
+          </div>
+
+          <div id="pr4">
+          <label for="parts_replaced"></label>
+          <input type="text" id="parts" style="width:250px; height:30px;">
+          <input type="number" name="txtnum4" ng-model="part4" id="amount">
+          </div>
+          <div id="pr5">
+          <label for="parts_replaced"></label>
+          <input type="text" id="parts" style="width:250px; height:30px;">
+          <input type="number"  name="txtnum5"   ng-model="part5" id="amount">
+          </div>
+
+          <div id="pr6">
+          <label for="parts_replaced"></label>
+          <input type="text" id="parts" style="width:250px; height:30px;" >
+          <input type="number" name="txtnum6" ng-model="part6" id="amount">
+          </div>
+
+          <div id="pr7">
+          <label for="parts_replaced"></label>
+          <input type="text" id="parts" style="width:250px; height:30px;" >
+          <input type="number" name="txtnum7" ng-model="part7" id="amount">
+          </div>
+
+          <!-- </div> -->
+
+
+
+          <div id="total">
+              <label>TOTAL </label>
+              <input type="text" name="textres" id="tot" value="{{part0 + part1 + part2 + part3 + part4 + part5 + part6 + part7}}" >
+          </div>
+
+</form>
+
+
+
+<div id="sym_img">
+  <img src="images/1.png">
+</div>
+
+<div id="car_logo">
+  <img src="images/audi-logo.png">
+  <img src="images/bmw.png">
+  <img src="images/citroen-logo.png">
+  <img src="images/fiat_logo.png">
+  <img src="images/jaguar.png">
+  <img src="images/mercedes-benz-logo.png">
+  <img src="images/ford-logo.png">
+  <img src="images/2.png">
+  <img src="images/renault-logo.png">
+  <img src="images/vw-logo.png">
+</div>
+
+
+
+<div id="des2">
+  <canvas id="myCanvas1" width="1365" height="150"
+  style="border:1px solid #c3c3c3;">
+  </canvas>
+
+  <script>
+  var canvas = document.getElementById("myCanvas1");
+  var ctx = canvas.getContext("2d");
+  ctx.fillStyle = "darkblue";
+  ctx.fillRect(0,0,1365,150);
+  </script>
+</div>
+<div id="timings">
+  <h3 id="hr"> Hours Of Operation:</h3>
+  Mon-Fri:9.00 AM-10.00 PM<br>
+  Sat:9.00 AM-6.00 PM<br>
+  Sun:Holiday<br>
+</div>
+
+</div>
+<div id="pay">
+    <img src="images/payment.png">
+</div>
+</body>
+</html>

@@ -1,0 +1,413 @@
+<html>
+<head>
+  <title id="t1"> appoint </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="pgm/appoint.css">
+
+    <script type="text/javascript" src="js/lightbox-plus-jquery.min.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <script src="http://code.jquery.com/jquery.latest.min.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script src="js/app.js"></script>
+
+
+</head>
+<body ng-app="myApp" ng-controller="Controller7" id="bg">
+
+<div id="des1">
+  <canvas id="myCanvas" width="1365" height="200"
+  style="border:1px solid #c3c3c3;">
+  </canvas>
+
+  <script>
+  var canvas = document.getElementById("myCanvas");
+  var ctx = canvas.getContext("2d");
+  ctx.fillStyle = "darkblue";
+  ctx.fillRect(0,0,1365,200);
+  </script>
+</div>
+<div id="comp_name">
+
+</div>
+<div id="logo">
+<img src="images/lo_new1.png" alt="Logo to be Displayed">
+</div>
+<div class="navbar:default" id="cssmenu" >
+   <ul class="nav navbar-nav navbar-right">
+      <li> <a href="front.html">Home </a> </li>
+        <li> <a href="service.html"> Services </a> </li>
+            <li> <a href="book.html"> Book</a> </li>
+              <li> <a href="offers.html"> Offers</a> </li>
+              <li> <a href="review.html"> Reviews </a> </li>
+                <li> <a href="img_gallery.html"> Gallery</a> </li>
+                  <li> <a href="reachus.html"> Reach us</a> </li>
+                  <li> <a href="admin.html"> Admin</a> </li>
+    </ul>
+  </div>
+<div id="txt_slogan">
+  <!--  We Share The Pride In Your Ride-->
+</div>
+<div id="ph">
+  email:anupba72@gmail.com<br>
+  phone:+91-8553905226
+</div>
+<div id="add">
+  A Building, 1st Cross,1st Main Road<br>
+  S.V.G Nagar, Nagarbhavi, Moodalapalya<br>
+  Bengaluru:560072<br>
+</div>
+
+<div id="cb">
+<a href="review.html" class="btn btn-success btn-block">
+   Chatbot  </a>
+</div>
+
+  <div class="container">
+
+      <form method="post">
+      <div class="row">
+        <div class="col-25">
+          <label for="name"> Name </label>
+        </div>
+        <div class="col-25">
+
+
+          <input type="textarea" style="width:20%; height:30px;" id="name" name="Name" placeholder="Your name.." ng-model="nameenter" required>
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <br>
+          <label for="phno">Phone Number</label>
+        </div>
+        <div class="col-25">
+
+          <input type="textarea" style="width:20%; height:30px;" id="phno" name="phno" placeholder="Your phone number.."ng-model="phnoenter" required>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <br>
+          <label for="email">Email</label>
+        </div>
+        <div class="col-75">
+
+          <input type="textarea" style="width:20%; height:30px;" id="email" name="email" placeholder="Your email id.."ng-model="enteremail" required>
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <br>
+          <label for="carreg">Car Reg No</label>
+        </div>
+        <div class="col-75">
+
+
+          <input type="textarea" style="width:20%; height:30px;" id="carreg" name="carreg" placeholder="Your car Reg Num.."ng-model="entercarreg" required>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <br>
+          <label for="address">Address</label>
+        </div>
+        <div class="col-75">
+
+
+          <input type="textarea" style="width:20%; height:30px;" id="address" name="address" placeholder="Your Address.."ng-model="enteraddress" required>
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <br>
+          <label for="service">Service</label>
+        </div>
+        <div class="col-75">
+        <input type="textarea" style="width:20%; height:30px;" id="ser" name="servc" placeholder="Service needed.."ng-model="enterservice" required>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <br>
+          <label for="access_id"> Acc Id  </label>
+        </div>
+        <div class="col-25">
+
+
+          <input type="textarea" style="width:20%; height:30px;" id="access_id" name="Access Id" placeholder="accessories_id" ng-model="enterid">
+
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-25">
+          <br>
+      <label> Date:<br><input type="date" style=" height:30px;"></label>
+    </div>
+  </div>
+</div>
+</div>
+
+<div id="access1">
+<div class="container" id="cont1">
+  <h2>ACCESSORIES</h2>
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal1">ALLOYS</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal1" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">ALLOYS</h4>
+        </div>
+        <div class="modal-body">
+          <img src="images/h1.jpg" style="width:40%" title="id:a1  cost:1000/- per piece"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <img src="images/h2.jpg" style="width:40%" title="id:a2  cost:1500/- per piece"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <img src="images/h3.jpg" style="width:40%" title="id:a3  cost:1700/- per piece"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <img src="images/h4.jpg" style="width:40%" title="id:a4  cost:1750/- per piece"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <img src="images/h5.jpg" style="width:40%" title="id:a5  cost:1250/- per piece"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <img src="images/h6.jpg" style="width:40%" title="id:a6  cost:1300/- per piece"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <img src="images/h7.jpg" style="width:40%" title="id:a7  cost:1050/- per piece"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <img src="images/h8.jpg" style="width:40%" title="id:a8  cost:1500/- per piece"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <img src="images/h9.jpg" style="width:40%" title="id:a9  cost:1900/- per piece"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <img src="images/h10.jpg" style="width:40%" title="id:a10  cost:1000/- per piece">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2">BONET</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal2" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">BONET</h4>
+       </div>
+        <div class="modal-body">
+          <img src="images/b1.jpg" style="width:40%" title="id:b1  cost:2000/- per piece"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <img src="images/b2.jpg" style="width:40%" title="id:b2  cost:2500/- per piece"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <img src="images/b3.jpg" style="width:40%" title="id:b3  cost:3000/- per piece"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <img src="images/b4.jpg" style="width:40%" title="id:b4  cost:2700/- per piece"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <img src="images/b5.jpg" style="width:40%" title="id:b5  cost:2580/- per piece"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <img src="images/b6.jpg" style="width:40%" title="id:b6  cost:3900/- per piece"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <img src="images/b7.jpg" style="width:40%" title="id:b7  cost:2700/- per piece"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <img src="images/b8.jpg" style="width:40%" title="id:b8  cost:2900/- per piece"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <img src="images/b9.jpg" style="width:40%" title="id:b9  cost:3000/- per piece"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <img src="images/b10.jpg" style="width:40%" title="id:b10  cost:4000/- per piece">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal3">MIRRORS</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal3" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">MIRRORS</h4>
+       </div>
+        <div class="modal-body">
+          <img src="images/m1.jpg" style="width:40%" title="id:m1  cost:2000/- per piece"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <img src="images/m2.jpg" style="width:40%" title="id:m2  cost:1500/- per piece"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <img src="images/m3.jpg" style="width:40%" title="id=m3  cost:1800/- per piece"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <img src="images/m4.jpg" style="width:40%" title="id:m4  cost:1750/- per piece"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <img src="images/m6.jpg" style="width:40%" title="id:m5  cost:3000/- per piece"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <img src="images/m5.jpg" style="width:40%" title="id:m6  cost:2000/- per piece"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <img src="images/m7.jpg" style="width:40%" title="id:m7  cost:2500/- per piece"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <img src="images/m8.jpg" style="width:40%" title="id:m8  cost:1000/- per piece"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <img src="images/m9.jpg" style="width:40%" title="id:m9  cost:1500/- per piece"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <img src="images/m10.jpg" style="width:40%" title="id:m10  cost:3000/- per piece">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal4">SPOILERS</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal4" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">SPOILERS</h4>
+       </div>
+        <div class="modal-body">
+          <img src="images/sp1.jpg" style="width:40%" title="id:s1  cost:4000/- per piece"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <img src="images/sp2.jpg" style="width:40%" title="id:s2  cost:4000/- per piece"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <img src="images/sp4.jpg" style="width:40%" title="id:s3  cost:4500/- per piece"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <img src="images/sp5.jpg" style="width:40%" title="id:s4  cost:3800/- per piece"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <img src="images/sp6.jpg" style="width:40%" title="id:s5  cost:4700/- per piece"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <img src="images/sp8.jpg" style="width:40%" title="id:s6  cost:4520/- per piece"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <img src="images/sp9.jpg" style="width:40%" title="id:s7  cost:3750/- per piece"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <img src="images/sp10.jpg" style="width:40%" title="id:s8  cost:4000/- per piece"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <img src="images/sp11.jpg" style="width:40%" title="id:s9  cost:4200/- per piece"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <img src="images/sp12.jpg" style="width:40%" title="id:s10  cost:3000/- per piece">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal5">STICKERING</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal5" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">STICKERING</h4>
+       </div>
+        <div class="modal-body">
+          <img src="images/s1.jpg" style="width:40%" title="id:st1  cost:2000/- per piece"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <img src="images/s2.jpg" style="width:40%" title="id:st2  cost:1500/- per piece"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <img src="images/s3.jpg" style="width:40%" title="id:st3  cost:1750/- per piece"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <img src="images/s4.jpg" style="width:40%" title="id:st4  cost:1800/- per piece"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <img src="images/s5.jpg" style="width:40%" title="id:st5  cost:2000/- per piece"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <img src="images/s6.jpg" style="width:40%" title="id:st6  cost:1800/- per piece"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <img src="images/s7.jpg" style="width:40%" title="id:st7  cost:1500/- per piece"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <img src="images/s8.jpg" style="width:40%" title="id:st8  cost:2500/- per piece"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <img src="images/s9.jpg" style="width:40%" title="id:st9  cost:2700/- per piece"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <img src="images/s10.jpg" style="width:40%" title="id:st10  cost:3000/- per piece">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<br />
+<br />
+<br />
+
+  <div id="mo">
+  <input type="text" value="9.00AM to 1.00PM" disabled>
+  <a href="morn.html" type="button" class="okbtn">OK</a>
+  <input type="text" value="" placeholder="enter selected slot id "ng-model="mrngslotid">
+
+
+</div>
+
+<br />
+<div id="ev">
+    <input type="text" value="2.00PM to 6.00PM" disabled>
+    <a href="evn.html" type="button" class="okbtn">OK</a>
+    <input type="text" value="" placeholder="enter selected slot id " ng-model="noonslotid">
+</div>
+
+
+      <input type="submit" id="sub" value="Submit" ng-click="submitbook()">
+       <button type="submit" id="can">cancel</button>
+          <br>
+        </form>
+
+<div id="submitmsg">
+{{msg}}
+</div>
+      <div id="sym_img">
+        <img src="images/1.png">
+      </div>
+
+      <div id="car_logo">
+        <img src="images/audi-logo.png">
+        <img src="images/bmw.png">
+        <img src="images/citroen-logo.png">
+        <img src="images/fiat_logo.png">
+        <img src="images/jaguar.png">
+        <img src="images/mercedes-benz-logo.png">
+        <img src="images/ford-logo.png">
+        <img src="images/2.png">
+        <img src="images/renault-logo.png">
+        <img src="images/vw-logo.png">
+      </div>
+
+
+
+      <div id="des2">
+        <canvas id="myCanvas1" width="1365" height="150"
+        style="border:1px solid #c3c3c3;">
+        </canvas>
+
+        <script>
+        var canvas = document.getElementById("myCanvas1");
+        var ctx = canvas.getContext("2d");
+        ctx.fillStyle = "darkblue";
+        ctx.fillRect(0,0,1365,150);
+        </script>
+      </div>
+      <div id="timings">
+        <h3 id="hr"> Hours Of Operation:</h3>
+        Mon-Fri:8.30 AM-6.00 PM<br>
+        Sat:8.00 AM-5.00 PM<br>
+        Sun:Holiday<br>
+      </div>
+</body>
+</html>

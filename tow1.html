@@ -1,0 +1,137 @@
+<html>
+<head>
+  <title id="t1"> Tow Service</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="pgm/tow1.css">
+
+
+
+</head>
+<body id="bg" style="background-color:lightblue">
+<div id="des1">
+  <canvas id="myCanvas" width="1365" height="200"
+  style="border:1px solid #c3c3c3;">
+  </canvas>
+
+  <script>
+  var canvas = document.getElementById("myCanvas");
+  var ctx = canvas.getContext("2d");
+  ctx.fillStyle = "darkblue";
+  ctx.fillRect(0,0,1365,200);
+  </script>
+</div>
+<div id="comp_name">
+
+</div>
+<div id="logo">
+<img src="images/lo_new1.png" alt="Logo to be Displayed">
+</div>
+<div id="ph">
+  email:anupba72@gmail.com<br>
+  phone:+91-8553905226
+</div>
+<div id="add">
+  A Building, 1st Cross,1st Main Road<br>
+  S.V.G Nagar, Nagarbhavi, Moodalapalya<br>
+  Bengaluru:560072<br>
+</div>
+
+<div id="cb">
+<a href="review.html" class="btn btn-success btn-block">
+   Chatbot  </a>
+</div>
+
+
+<form action="MAILTO:" method="post" enctype="text/plain" style="border:1px solid #ccc">
+  <div class="container">
+    <h1>TOW SERVICE</h1>
+    <p>Please Enter The Details</p>
+    <hr>
+
+    <label for="Name"><b>Name</b></label>
+    <input type="text" placeholder="Enter the Name" name="Name" required>
+
+	<label for="Car_Number"><b>Car_Number</b></label>
+    <input type="text" placeholder="Enter Car_Number" name="Car_Number" required>
+
+    <label for="Contact_no"><b>Contact_no</b></label>
+    <input type="text" placeholder="Enter Contact_no" name="Contact_no" required>
+
+    <label for="Email"><b>Email</b></label>
+    <input type="text" placeholder="Enter email" name="Email" required>
+
+    <label for="Location"><b>Location</b></label>
+    <input type="text" placeholder="Enter location" name="Location" required>
+
+    <label>
+      <input type="checkbox" checked="checked" name="Accept" style="margin-bottom:15px"> Agree
+    </label>
+
+    <p>By entering your details you agree for tow service <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+    <div class="clearfix">
+      <a href="front.html">
+      <button type="button" class="cancelbtn">Cancel</button>
+    </a>
+      <button type="submit" class="signupbtn">Submit</button>
+    </div>
+  </div>
+</form>
+
+<div id="sym_img">
+  <img src="images/1.png">
+</div>
+
+<div id="car_logo">
+  <img src="images/audi-logo.png">
+  <img src="images/bmw.png">
+  <img src="images/citroen-logo.png">
+  <img src="images/fiat_logo.png">
+  <img src="images/jaguar.png">
+  <img src="images/mercedes-benz-logo.png">
+  <img src="images/ford-logo.png">
+  <img src="images/2.png">
+  <img src="images/renault-logo.png">
+  <img src="images/vw-logo.png">
+</div>
+
+
+
+<div id="des2">
+  <canvas id="myCanvas1" width="1365" height="150"
+  style="border:1px solid #c3c3c3;">
+  </canvas>
+
+  <script>
+  var canvas = document.getElementById("myCanvas1");
+  var ctx = canvas.getContext("2d");
+  ctx.fillStyle = "darkblue";
+  ctx.fillRect(0,0,1365,150);
+  </script>
+</div>
+<div id="timings">
+  <h3 id="hr"> Hours Of Operation:</h3>
+  Mon-Fri:9.00 AM-10.00 PM<br>
+  Sat:9.00 AM-6.00 PM<br>
+  Sun:Holiday<br>
+</div>
+
+
+<div id="pay">
+    <img src="images/payment.png">
+</div>
+</body>
+</html>

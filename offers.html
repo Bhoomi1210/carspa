@@ -1,0 +1,145 @@
+<html>
+<head>
+
+<title>Offers</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="pgm/offers.css">
+<!-- Latest compiled and minified CSS -->
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<link rel="stylsheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<!-- Latest compiled and minified JavaScript -->
+<script src="http://code.jquery.com/jquery.latest.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="js/app.js"></script>
+
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body ng-app="myApp" ng-controller="Controller2" style="background-color:lightblue" id="bg">
+  <div id="des1">
+  <canvas id="myCanvas" width="1365" height="200"
+  style="border:1px solid #c3c3c3;">
+  </canvas>
+
+  <script>
+  var canvas = document.getElementById("myCanvas");
+  var ctx = canvas.getContext("2d");
+  ctx.fillStyle = "darkblue";
+  ctx.fillRect(0,0,1365,200);
+  </script>
+</div>
+<div id="comp_name">
+
+</div>
+<div id="logo">
+<img src="images/lo_new1.png" alt="Logo to be Displayed">
+</div>
+<div class="navbar:default" id="cssmenu" >
+   <ul class="nav navbar-nav navbar-right">
+      <li> <a href="front.html">Home </a> </li>
+        <li> <a href="service.html"> Services </a> </li>
+            <li> <a href="book.html"> Book</a> </li>
+              <li> <a href="offers.html"> Offers</a> </li>
+              <li> <a href="review.html"> Reviews </a> </li>
+                <li> <a href="img_gallery.html"> Gallery</a> </li>
+                  <li> <a href="reachus.html"> Reach us</a> </li>
+                  <li> <a href="admin.html"> Admin</a> </li>
+    </ul>
+  </div>
+<div id="ph">
+  email:anupba72@gmail.com<br>
+  phone:+91-8553905226
+</div>
+<div id="add">
+  <br>
+  A Building, 1st Cross,1st Main Road<br>
+  S.V.G Nagar, Nagarbhavi, Moodalapalya<br>
+  Bengaluru:560072<br>
+</div>
+<div id="cb">
+<a href="review.html" class="btn btn-success btn-block">
+   Chatbot  </a>
+</div>
+
+
+<div class="w3-container">
+  <h2>Best Deals With Best offers!!!!!!!...</h2>
+  <br>
+  <br>
+  <br>
+  <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Check Out The Offers</button>
+
+  <div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-animate-bottom w3-card-4">
+      <header class="w3-container w3-teal">
+        <span onclick="document.getElementById('id01').style.display='none'"
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Here The Offers For You</h2>
+      </header>
+      <div class="w3-container">
+        <p>are u member?</p>
+            <ul>
+              <li ng-repeat="b in applist">
+
+                  {{b.offer}}
+              </li>
+            </ul>
+              </div>
+      <footer class="w3-container w3-teal">
+        <p>THANK YOU</p>
+      </footer>
+    </div>
+  </div>
+</div>
+
+<div id="sym_img">
+  <img src="images/1.png">
+</div>
+
+<div id="car_logo">
+  <img src="images/audi-logo.png">
+  <img src="images/bmw.png">
+  <img src="images/citroen-logo.png">
+  <img src="images/fiat_logo.png">
+  <img src="images/jaguar.png">
+  <img src="images/mercedes-benz-logo.png">
+  <img src="images/ford-logo.png">
+  <img src="images/2.png">
+  <img src="images/renault-logo.png">
+  <img src="images/vw-logo.png">
+</div>
+
+
+
+<div id="des2">
+  <canvas id="myCanvas1" width="1365" height="150"
+  style="border:1px solid #c3c3c3;">
+  </canvas>
+
+  <script>
+  var canvas = document.getElementById("myCanvas1");
+  var ctx = canvas.getContext("2d");
+  ctx.fillStyle = "darkblue";
+  ctx.fillRect(0,0,1365,150);
+  </script>
+</div>
+<div id="timings">
+  <h3 id="hr"> Hours Of Operation:</h3>
+  Mon-Fri:9.00 AM-10.00 PM<br>
+  Sat:9.00 AM-6.00 PM<br>
+  Sun:Holiday<br>
+</div>
+
+<div id="pay">
+    <img src="images/payment.png">
+</div>
+
+
+
+</body>
+</html>

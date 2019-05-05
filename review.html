@@ -1,0 +1,309 @@
+<html>
+<head>
+  <title id="t1"> AUTO SPA </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="pgm/review.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <link rel="stylsheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="http://code.jquery.com/jquery.latest.min.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script src="js/app.js"></script>
+</head>
+<body ng-app="myApp" style="background-color:lightblue" id="bg">
+
+<div id="des1">
+  <canvas id="myCanvas" width="1365" height="200"
+  style="border:1px solid #c3c3c3;">
+  </canvas>
+
+  <script>
+  var canvas = document.getElementById("myCanvas");
+  var ctx = canvas.getContext("2d");
+  ctx.fillStyle = "darkblue";
+  ctx.fillRect(0,0,1365,200);
+  </script>
+</div>
+<div id="comp_name">
+
+</div>
+<div id="logo">
+<img src="images/lo_new1.png" alt="Logo to be Displayed">
+</div>
+<div class="navbar:default" id="cssmenu" >
+   <ul class="nav navbar-nav navbar-right">
+      <li> <a href="front.html">Home </a> </li>
+        <li> <a href="service.html"> Services </a> </li>
+            <li> <a href="book.html"> Book</a> </li>
+              <li> <a href="offers.html"> Offers</a> </li>
+              <li> <a href="review.html"> Reviews </a> </li>
+                <li> <a href="img_gallery.html"> Gallery</a> </li>
+                  <li> <a href="reachus.html"> Reach us</a> </li>
+                  <li> <a href="admin.html"> Admin</a> </li>
+    </ul>
+  </div>
+<div id="txt_slogan">
+  <!--  We Share The Pride In Your Ride-->
+</div>
+<div id="ph">
+  email:anupba72@gmail.com<br>
+  phone:+91-8553905226
+</div>
+<div id="add">
+  A Building, 1st Cross,1st Main Road<br>
+  S.V.G Nagar, Nagarbhavi, Moodalapalya<br>
+  Bengaluru:560072<br>
+</div>
+
+<br />
+<br />
+<br />
+<div  ng-controller="Controller5">
+  <p id="review_p">Send CarSpa Your Comments</p>
+  <form  id="review_id">
+    Enter Name:<br>
+    <input  type="text" name="Name"  placeholder="name"  style="color:black;" cols:"40;"><br>
+<br>
+  Enter Email ID:<br>
+    <input  type="text" name="Email-id"  placeholder="email"  style="color:black;" cols:"40;"><br>
+<br>
+    Enter Comments:<br>
+    <form method="post">
+        <textarea rows="5" cols="50" style="color:black" ng-model="reviewenter">
+      </textarea>
+<input type="submit" value="Submit" ng-click="submitreview()">
+</form>
+</form>
+</div>
+
+
+
+
+<div id="review_rating">
+  <span class="fa fa-star" > </span>
+  <span class="fa fa-star" > </span>
+  <span class="fa fa-star"> </span>
+  <span class="fa fa-star"> </span>
+  <span class="fa fa-star"> </span>
+</div>
+
+
+
+<div id='bodybox'>
+  <h4 id="ch" style="color:black;">Chatbot</h4>
+  <div id='chatborder'>
+
+    <p id="chatlog7" class="chatlog">&nbsp;</p>
+    <p id="chatlog6" class="chatlog">&nbsp;</p>
+    <p id="chatlog5" class="chatlog">&nbsp;</p>
+    <p id="chatlog4" class="chatlog">&nbsp;</p>
+    <p id="chatlog3" class="chatlog">&nbsp;</p>
+    <p id="chatlog2" class="chatlog">&nbsp;</p>
+    <p id="chatlog1" class="chatlog">&nbsp;</p>
+    <input type="text" name="chat" id="chatbox" placeholder="Hi there! Type here to talk to me." onfocus="placeHolder()">
+  </div>
+</div>
+
+
+
+<div  ng-controller="Controller4" id="safety">
+  <h3 id="main">Maintenance Tips to Extend the Life of Car</h3>
+  <marquee  height="200px" width="900px" behavior="scroll" direction="up" scrollamount="3" >
+    <ul>
+      <li ng-repeat="r1 in r">
+        {{r1.review}}
+      </li>
+    </ul>
+  <br>
+*greate custormer service and well worth the money
+    <br>
+    <br>
+    * This place actually did a gud job. <br>
+    <br>
+    * The services was great and overall happy especially with the prices.
+    <br>
+    <br>
+    * Donot race your car's engine during Startup.<br>
+    <br>
+    * Accelerate slowly when you begin your Drive.<br>
+    <br>
+    * Put less strain on your Engine and automatic Transmission by
+      shifting to neutral at Red Lights.<br>
+    <br>
+    * Avoid driving at high speeds and Accelerating quikly,especially<br>
+      when its very hot or very cold outside.<br>
+    <br>
+    * When turning your Steering Wheel, don't hold it in an extreme right<br>
+      or Left Position for more than few seconds.
+
+  </marquee>
+</div>
+
+<div id="sym_img">
+  <img src="images/1.png">
+</div>
+
+<div id="car_logo">
+  <img src="images/audi-logo.png">
+  <img src="images/bmw.png">
+  <img src="images/citroen-logo.png">
+  <img src="images/fiat_logo.png">
+  <img src="images/jaguar.png">
+  <img src="images/mercedes-benz-logo.png">
+  <img src="images/ford-logo.png">
+  <img src="images/2.png">
+  <img src="images/renault-logo.png">
+  <img src="images/vw-logo.png">
+</div>
+
+
+
+<div id="des2">
+  <canvas id="myCanvas1" width="1365" height="150"
+  style="border:1px solid #c3c3c3;">
+  </canvas>
+
+  <script>
+  var canvas = document.getElementById("myCanvas1");
+  var ctx = canvas.getContext("2d");
+  ctx.fillStyle = "darkblue";
+  ctx.fillRect(0,0,1365,150);
+  </script>
+</div>
+<div id="timings">
+  <h3 id="hr"> Hours Of Operation:</h3>
+  Mon-Fri:9.00 AM-10.00 PM<br>
+  Sat:9.00 AM-6.00 PM<br>
+  Sun:Holiday<br>
+</div>
+
+
+<div id="pay">
+    <img src="images/payment.png">
+</div>
+<script>
+//links
+//http://eloquentjavascript.net/09_regexp.html
+//https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
+nlp = window.nlp_compromise;
+
+var messages = [], //array that hold the record of each string in chat
+  lastUserMessage = "", //keeps track of the most recent input string from the user
+  botMessage = "", //var keeps track of what the chatbot is going to say
+  botName = 'Chatbot', //name of the chatbot
+  talking = true; //when false the speach function doesn't work
+//
+//
+//****************************************************************
+//****************************************************************
+//****************************************************************
+//****************************************************************
+//****************************************************************
+//****************************************************************
+//****************************************************************
+//edit this function to change what the chatbot says
+function chatbotResponse() {
+  talking = true;
+  botMessage = "I'm confused"; //the default message
+
+  if (lastUserMessage === 'hi' || lastUserMessage =='hello') {
+    const hi = ['hi','howdy','hello']
+    botMessage = hi[Math.floor(Math.random()*(hi.length))];;
+  }
+
+  if (lastUserMessage === 'name') {
+    botMessage = 'My name is ' + botName;
+  }
+
+  if (lastUserMessage === 'get me your address') {
+    botMessage = 'A Building, 1st Cross,1st Main Road,S.V.G Nagar, Nagarbhavi, Moodalapalya,Bengaluru:560072';
+  }
+
+  if (lastUserMessage === 'is car wash available?') {
+    botMessage = 'Yes';
+  }
+
+
+}
+//****************************************************************
+//****************************************************************
+//****************************************************************
+//****************************************************************
+//****************************************************************
+//****************************************************************
+//****************************************************************
+//
+//
+//
+//this runs each time enter is pressed.
+//It controls the overall input and output
+function newEntry() {
+  //if the message from the user isn't empty then run
+  if (document.getElementById("chatbox").value != "") {
+    //pulls the value from the chatbox ands sets it to lastUserMessage
+    lastUserMessage = document.getElementById("chatbox").value;
+    //sets the chat box to be clear
+    document.getElementById("chatbox").value = "";
+    //adds the value of the chatbox to the array messages
+    messages.push(lastUserMessage);
+    //Speech(lastUserMessage);  //says what the user typed outloud
+    //sets the variable botMessage in response to lastUserMessage
+    chatbotResponse();
+    //add the chatbot's name and message to the array messages
+    messages.push("<b>" + botName + ":</b> " + botMessage);
+    // says the message using the text to speech function written below
+    Speech(botMessage);
+    //outputs the last few array elements of messages to html
+    for (var i = 1; i < 8; i++) {
+      if (messages[messages.length - i])
+        document.getElementById("chatlog" + i).innerHTML = messages[messages.length - i];
+    }
+  }
+}
+
+//text to Speech
+//https://developers.google.com/web/updates/2014/01/Web-apps-that-talk-Introduction-to-the-Speech-Synthesis-API
+function Speech(say) {
+  if ('speechSynthesis' in window && talking) {
+    var utterance = new SpeechSynthesisUtterance(say);
+    //msg.voice = voices[10]; // Note: some voices don't support altering params
+    //msg.voiceURI = 'native';
+    //utterance.volume = 1; // 0 to 1
+    //utterance.rate = 0.1; // 0.1 to 10
+    //utterance.pitch = 1; //0 to 2
+    //utterance.text = 'Hello World';
+    //utterance.lang = 'en-US';
+    speechSynthesis.speak(utterance);
+  }
+}
+
+//runs the keypress() function when a key is pressed
+document.onkeypress = keyPress;
+//if the key pressed is 'enter' runs the function newEntry()
+function keyPress(e) {
+  var x = e || window.event;
+  var key = (x.keyCode || x.which);
+  if (key == 13 || key == 3) {
+    //runs this function when enter is pressed
+    newEntry();
+  }
+  if (key == 38) {
+    console.log('hi')
+      //document.getElementById("chatbox").value = lastUserMessage;
+  }
+}
+
+//clears the placeholder text ion the chatbox
+//this function is set to run when the users brings focus to the chatbox, by clicking on it
+function placeHolder() {
+  document.getElementById("chatbox").placeholder = "";
+}
+</script>
+</body>
+</html>

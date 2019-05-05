@@ -1,0 +1,263 @@
+<html>
+<head>
+  <title>Admin</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="pgm/admin.css">
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="http://code.jquery.com/jquery.latest.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="js/app.js"></script>
+
+</head>
+<body ng-app="myApp" style="background-color:lightblue" id="bg">
+
+<div id="des1">
+  <canvas id="myCanvas" width="1365" height="200"
+  style="border:1px solid #c3c3c3;">
+  </canvas>
+
+  <script>
+  var canvas = document.getElementById("myCanvas");
+  var ctx = canvas.getContext("2d");
+  ctx.fillStyle = "darkblue";
+  ctx.fillRect(0,0,1365,200);
+  </script>
+</div>
+<div id="comp_name">
+
+</div>
+<div id="logo">
+<img src="images/lo_new1.png" alt="Logo to be Displayed">
+</div>
+<div class="navbar:default" id="cssmenu" >
+   <ul class="nav navbar-nav navbar-right">
+      <li> <a href="front.html">Home </a> </li>
+        <li> <a href="service.html"> Services </a> </li>
+            <li> <a href="book.html"> Book</a> </li>
+              <li> <a href="offers.html"> Offers</a> </li>
+              <li> <a href="review.html"> Reviews </a> </li>
+                <li> <a href="img_gallery.html"> Gallery</a> </li>
+                  <li> <a href="reachus.html"> Reach us</a> </li>
+                  <li> <a href="admin.html"> Admin</a> </li>
+    </ul>
+  </div>
+
+<div id="ph">
+  email:anupba72@gmail.com<br>
+  phone:+91-8553905226
+</div>
+<div id="add">
+  A Building, 1st Cross,1st Main Road<br>
+  S.V.G Nagar, Nagarbhavi, Moodalapalya<br>
+  Bengaluru:560072<br>
+</div>
+<div id="cb">
+<a href="review.html" class="btn btn-success btn-block">
+   Chatbot  </a>
+</div>
+
+<br />
+<div class="container">
+  <!-- Trigger the modal with a button -->
+
+  <button type="button" class="btn btn-default btn-lg" id="myBtn">Manager</button>
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" style="padding:35px 50px;">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4><span class="glyphicon glyphicon-lock"></span>Login</h4>
+        </div>
+        <div class="modal-body" style="padding:40px 50px;">
+          <form  ng-controller="storeLoginController" role="form">
+          <form role="form">
+            <div class="form-group">
+              <label for="usrname"><span class="glyphicon glyphicon-user"></span> Username</label>
+              <input type="text" ng-model="emailenter1" class="form-control" id="usrname" placeholder="Enter email" required>
+            </div>
+            <div class="form-group">
+              <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
+              <input type="password"ng-model="passwordenter1" class="form-control" id="psw" placeholder="Enter password" required>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="" checked>Remember me</label>
+
+
+            <button type="submit" class="btn btn-success btn-block" ng-click="storevalidateUser()" data-dismiss="modal"><span class="glyphicon glyphicon-off"></span> login</button>
+
+
+</div>
+
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+          <p>Not a member? <a href="signup2.html">Sign Up</a></p>
+          <p>Forgot <a href="#">Password?</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-default btn-lg" id="Btn">Head</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="Modal" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" style="padding:35px 50px;">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4><span class="glyphicon glyphicon-lock"></span> Login</h4>
+        </div>
+        <div class="modal-body" style="padding:40px 50px;">
+          <form  ng-controller="teamleaderLoginController" role="form">
+          <form role="form">
+            <div class="form-group">
+              <label for="usrname"><span class="glyphicon glyphicon-user"></span> Username</label>
+              <input type="text"  ng-model="emailenter3"  class="form-control" id="usrname" placeholder="Enter email" required>
+            </div>
+            <div class="form-group">
+              <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
+              <input type="password"  ng-model="passwordenter3" class="form-control" id="psw" placeholder="Enter password" required>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="" checked>Remember me</label>
+            </div>
+
+
+
+
+              <button type="submit" class="btn btn-success btn-block" ng-click="teamleadervalidateUser()" data-dismiss="modal"><span class="glyphicon glyphicon-off"></span> login</button>
+
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+            <span class="glyphicon glyphicon-remove"></span> Cancel</button>
+          <p>Not a member? <a href="signup3.html">Sign Up</a></p>
+          <p>Forgot <a href="#">Password?</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-default btn-lg" id="Btn1">Accountant</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="Modal1" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" style="padding:35px 50px;">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4><span class="glyphicon glyphicon-lock"></span> Login</h4>
+        </div>
+        <div class="modal-body" style="padding:40px 50px;">
+          <form ng-controller="accountLoginController" role="form">
+          <form role="form">
+            <div class="form-group">
+              <label for="usrname"><span class="glyphicon glyphicon-user"></span> Username</label>
+              <input type="text" ng-model="emailenter2" class="form-control" id="usrname" placeholder="Enter email" required>
+            </div>
+            <div class="form-group">
+              <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
+              <input type="password" ng-model="passwordenter2" class="form-control" id="psw" placeholder="Enter password" required>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="" checked>Remember me</label>
+            </div>
+
+              <button type="submit" class="btn btn-success btn-block" ng-click="accountvalidateUser()" data-dismiss="modal"><span class="glyphicon glyphicon-off"></span> login</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+          <p>Not a member? <a href="signup4.html">Sign Up</a></p>
+          <p>Forgot <a href="#">Password?</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+<script>
+$(document).ready(function(){
+    $("#myBtn").click(function(){
+        $("#myModal").modal();
+    });
+});
+</script>
+<script>
+$(document).ready(function(){
+    $("#Btn").click(function(){
+        $("#Modal").modal();
+    });
+});
+</script>
+<script>
+$(document).ready(function(){
+    $("#Btn1").click(function(){
+        $("#Modal1").modal();
+    });
+});
+</script>
+<div id="sym_img">
+  <img src="images/1.png">
+</div>
+
+<div id="car_logo">
+  <img src="images/audi-logo.png">
+  <img src="images/bmw.png">
+  <img src="images/citroen-logo.png">
+  <img src="images/fiat_logo.png">
+  <img src="images/jaguar.png">
+  <img src="images/mercedes-benz-logo.png">
+  <img src="images/ford-logo.png">
+  <img src="images/2.png">
+  <img src="images/renault-logo.png">
+  <img src="images/vw-logo.png">
+</div>
+
+
+
+<div id="des2">
+  <canvas id="myCanvas1" width="1365" height="150"
+  style="border:1px solid #c3c3c3;">
+  </canvas>
+
+  <script>
+  var canvas = document.getElementById("myCanvas1");
+  var ctx = canvas.getContext("2d");
+  ctx.fillStyle = "darkblue";
+  ctx.fillRect(0,0,1365,150);
+  </script>
+</div>
+<div id="timings">
+  <h3 id="hr"> Hours Of Operation:</h3>
+  Mon-Fri:9.00 AM-10.00 PM<br>
+  Sat:9.00 AM-6.00 PM<br>
+  Sun:Holiday<br>
+</div>
+
+
+<div id="pay">
+    <img src="images/payment.png">
+</div>
+</body>
+</html>

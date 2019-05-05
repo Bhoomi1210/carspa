@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>chart</title>
+    <link rel="stylesheet" href="pgm/chart.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="pgm/chart.css">
+  </head>
+  <body id="graph" style="background-color:lightblue">
+    <canvas id="myChart" width="2%" height="2%"></canvas>
+    <div class="chart-container">
+    <canvas id="myCanvas"></canvas>
+</div>
+<script id="graph">
+var ctx = document.getElementById("myChart").getContext('2d');
+var myChart = new Chart(ctx, {
+    type: 'bar', //bar,horizontalBar,pie,line,doughtnut,radar,polarArea
+    data: {
+        labels: ["jan","feb","march","april", "may","june","july","aug","sept","oct","nov","dec"],
+        datasets: [{
+            label: '',
+            data: [
+              617594,
+              181045,
+              153060,
+              580987,
+               898765,
+               2342434,
+               3245434,
+               6545444,
+               345466,
+               654543,
+               6543654,
+               7654543
+            ],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(74, 159, 64, 0.2)',
+                'rgba(293, 99, 132, 0.2)',
+                'rgba(098, 88, 120, 0.2)',
+                'rgba(100, 11, 200, 0.2)',
+                'rgba(093, 65, 111, 0.2)',
+                'rgba(123, 98, 975, 0.2)',
+                'rgba(093, 34, 327, 0.2)',
+                'rgba(122, 54, 987, 0.2)'
+                  ],
+            borderColor: [
+                'rgba(255,99,132,1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(255, 159, 64, 1)',
+                'rgba(098, 049, 90, 1)',
+                'rgba(111, 165, 54, 1)',
+                'rgba(200, 345, 88, 1)',
+                'rgba(333, 987, 98, 1)',
+                'rgba(083, 353, 00, 1)',
+                'rgba(285, 123, 94, 1)',
+                'rgba(155, 109, 96, 1)'
+              ],
+            borderWidth: 4
+        }]
+    },
+    options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    scales: {
+        yAxes: [{
+          scaleLabel: {
+          display: true,
+          labelString:'<--------------->APPOINTMENTS<--------------->',
+        }
+      }],
+xAxes: [{
+      scaleLabel: {
+      display: true,
+      labelString:'<--------------------------->MONTHS<----------------------->',
+    }
+    }]
+}
+}
+
+});
+</script>
+</body>
+</html>

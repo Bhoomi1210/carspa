@@ -1,0 +1,611 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+
+
+#cssmenu,
+
+
+#cssmenu ul,
+
+
+#cssmenu ul li,
+
+
+#cssmenu ul li a {
+
+
+margin: 0;
+
+
+padding: 0;
+
+
+  border: 0;
+
+
+list-style: none;
+
+
+  line-height: 2;
+
+
+ display: block;
+
+
+  position: relative;
+
+
+-webkit-box-sizing: border-box;
+
+
+  -moz-box-sizing: border-box;
+
+
+  box-sizing: border-box;
+
+
+}
+
+
+
+#cssmenu:after,
+
+#cssmenu > ul:after
+{
+
+  content: ".";
+
+
+ display: block;
+
+
+  clear: both;
+
+
+visibility: hidden;
+
+
+  line-height: 0;
+
+
+  height: 0;
+
+
+}
+
+
+#cssmenu
+{
+
+
+ width: auto;
+
+  border-bottom: 3px solid black;
+
+
+  font-family: Raleway, sans-serif;
+
+
+ line-height: 1;
+
+
+}
+
+
+#cssmenu > ul > li
+{
+
+
+float: left;
+
+
+}
+
+
+
+#cssmenu.align-center > ul
+{
+
+
+ font-size: 0;
+
+
+ text-align: center;
+
+
+}
+
+
+
+#cssmenu.align-center > ul > li
+{
+
+
+ display: inline-block;
+
+
+float: none;
+
+
+}
+
+
+
+#cssmenu.align-right > ul > li
+ {
+
+
+  float: right;
+
+
+}
+
+
+
+#cssmenu.align-right > ul > li > a
+{
+
+
+ margin-right: 0;
+
+
+margin-left: -4px;
+
+
+}
+
+
+
+#cssmenu > ul > li > a
+{
+
+
+  z-index: 2;
+
+
+ padding: 18px 25px 12px 25px;
+
+
+
+  font-size: 15px;
+
+
+  font-weight: 400;
+
+
+  text-decoration: none;
+
+
+color: black;
+
+
+-webkit-transition: all .2s ease;
+
+
+  -moz-transition: all .2 ease;
+
+
+-ms-transition: all .2s ease;
+
+
+  -o-transition: all .2s ease;
+
+
+transition: all .2s ease;
+
+
+  margin-right: -4px;
+
+
+}
+
+
+
+#cssmenu > ul > li.active > a,
+
+
+#cssmenu > ul > li:hover > a,
+
+
+#cssmenu > ul > li > a:hover {
+
+
+  color: #ffffff;
+
+
+}
+
+
+
+#cssmenu > ul > li > a:after
+{
+
+  position:absolute;
+
+
+ left: 0;
+
+
+bottom: 0;
+
+
+  right: 0;
+
+
+z-index: -1;
+
+
+  width: 100%;
+
+
+  height: 120%;
+
+
+ border-top-left-radius: 8px;
+
+
+ border-top-right-radius: 8px;
+
+
+ content: "";
+
+
+ -webkit-transition: all .2s ease;
+
+
+ -o-transition: all .2s ease;
+
+
+ transition: all .2s ease;
+
+
+ -webkit-transform: perspective(5px) rotateX(2deg);
+
+
+-webkit-transform-origin: bottom;
+
+
+ -moz-transform: perspective(5px) rotateX(2deg);
+
+
+ -moz-transform-origin: bottom;
+
+
+ transform: perspective(5px) rotateX(2deg);
+
+
+transform-origin: bottom;
+
+
+}
+
+
+
+#cssmenu > ul > li.active > a:after,
+
+
+#cssmenu > ul > li:hover > a:after,
+
+
+#cssmenu > ul > li > a:hover:after
+{
+
+
+ background: black;
+
+
+}
+#ph
+{
+
+    position:absolute;
+
+  color:white;
+
+  top:90px;
+
+ right:40px;
+
+  font-size:2rem;
+
+}
+
+#logo img{
+
+    position:absolute;
+
+top:1;
+
+width:11%;
+
+}
+
+#bg{
+
+    background-color:lightblue;
+
+}
+
+
+
+#comp_name{
+
+   font-size:4.5rem;
+
+    font-family:Raleway;
+
+   position:absolute;
+
+  top:59px;
+
+left:140px;
+
+  color:white;
+
+
+}
+
+#add{
+
+position:absolute;
+
+    top:110px;
+
+   left:14px;
+
+  color:white;
+
+}
+
+
+#hr{
+  color:yellow;
+}
+
+
+#sym_img{
+
+  position:absolute;
+
+    top:850px;
+
+    right:170px;
+
+}
+
+#car_logo{
+
+    position:absolute;
+    right:170px;
+    top:950px;
+}
+
+#des2{
+
+    position:absolute;
+
+    top:1025px;
+
+
+}
+
+
+#timings{
+
+  position:absolute;
+
+  top:1025px;
+
+ left:20px;
+
+color:white;
+
+}
+
+
+
+#pay{
+  position:relative;
+  top:750px;
+  left:1070px;
+}
+
+
+.modal-header, h4, .close {
+      background-color: #5cb85c;
+      color:white !important;
+      text-align: center;
+      font-size: 30px;
+  }
+  .modal-footer {
+      background-color: #f9f9f9;
+  }
+
+
+#aid{
+     padding-left:5px;
+    padding-right:5px;
+    position:absolute;
+    left:150px;
+    top:300px;
+}
+#Name1{
+    font-size: 1.5rem;
+    position:absolute;
+    left:100px;
+    top:375px;
+  }
+#no{
+  font-size: 1.5rem;
+  position:absolute;
+  left:100px;
+  top:450px;
+   }
+#sub{
+     padding-left:5px;
+    padding-right:5px;
+    position:absolute;
+    left:310px;
+    top:329px;
+}
+
+
+
+
+#ema{
+    position:absolute;
+    left:100px;
+    top:520px;
+    font-size:1.5rem;
+
+}
+#cno{
+    position:absolute;
+    left:100px;
+    top:590px;
+
+}
+#addr{
+    left:100px;
+    top:660px;
+    position:absolute;
+}
+
+#serv{
+    position:absolute;
+    left:100px;
+    top:730px;
+
+
+
+}
+#p1{
+  position: absolute;
+  right:500px;
+  top:300px;
+}
+#a1{
+  position: absolute;
+  right:300px;
+  top:300px;
+}
+#total{
+  position:absolute;
+  right:210px;
+  top:730px;
+}
+#pr{
+   position:absolute;
+   right:200px;
+   top:330px;
+}
+#pr1{
+    right:200px;
+    top:380px;
+    position:absolute;
+}
+#pr2{
+    right:200px;
+    top:430px;
+    position:absolute;
+}
+#pr3{
+    right:200px;
+    top:480px;
+    position:absolute;
+}
+#pr4{
+    right:200px;
+    top:530px;
+    position:absolute;
+}
+#pr5{
+    right:200px;
+    top:580px;
+    position:absolute;
+}
+#pr6{
+    right:200px;
+    top:630px;
+    position:absolute;
+}
+#pr7{
+    right:200px;
+    top:680px;
+    position:absolute;
+}
+
+#cal{
+     padding-left:5px;
+    padding-right:5px;
+    position:absolute;
+    left:325px;
+    top:687px;
+}
+
+
+
+#can{
+    position:absolute;
+    left:305px;
+    top:800px;
+}
+
+#words{
+     padding-left:5px;
+    padding-right:5px;
+    position:absolute;
+    left:233px;
+    top:780px;
+}
+#subb{
+  padding-left:5px;
+    padding-right:5px;
+    position:absolute;
+    left:478px;
+    top:780px;
+}
+#cb{
+  position: absolute;
+  top:212px;
+  left:20px;
+
+
+}
+#apt{
+  position: absolute;
+  left:100px;
+  top:300px;
+  font-size: 1.5rem;
+}
+#ai{
+  position: absolute;
+  left:20px;
+}
+#ai1{
+  position: absolute;
+  left:200px;
+}
+#name{
+  position: absolute;
+  left:20px;
+}
+#num{
+  position: absolute;
+  left: 20px;
+}
+#email{
+  position: absolute;
+  left: 20px;
+}
+#cnum{
+  position: absolute;
+  left: 20px;
+}
+#addr1{
+  position: absolute;
+  left: 20px;
+}
+#ser{
+  position: absolute;
+  left: 20px;
+}
